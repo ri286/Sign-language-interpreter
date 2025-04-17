@@ -1,3 +1,6 @@
+import os
+os.system("pip install tensorflow")
+import tensorflow as tf
 # -*- coding: utf-8 -*-
 """AI sign language model interpreter.py
 
