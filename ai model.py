@@ -1,5 +1,5 @@
 import os
-os.system("pip install tensorflow")
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"  # Suppresses INFO and WARNING logs
 import tensorflow as tf
 # -*- coding: utf-8 -*-
 """AI sign language model interpreter.py
