@@ -1,6 +1,15 @@
 import os
-os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"  # Suppresses INFO and WARNING logs
-import tensorflow as tf
+
+# Suppress TensorFlow logs (Only show ERROR messages)
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
+
+# Ensure TensorFlow is properly imported
+try:
+    import tensorflow as tf
+except ModuleNotFoundError:
+    print("TensorFlow is not installed. Run 'pip install tensorflow' manually.")
+
+print("TensorFlow version:", tf.__version__)  # Print the installed TensorFlow version
 # -*- coding: utf-8 -*-
 """AI sign language model interpreter.py
 
