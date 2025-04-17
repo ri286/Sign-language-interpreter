@@ -1,3 +1,5 @@
+import tensorflow as tf
+print("TensorFlow version:", tf.__version__)  # Print the installed TensorFlow version
 import os
 
 # Suppress TensorFlow logs (Only show ERROR messages)
